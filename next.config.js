@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-const apiUrl = process.env.BACKEND_ORIGIN || 'http://localhost:8000';
+const apiUrl = process.env.NEXT_PUBLIC_API_URL || process.env.NEXT_PUBLIC_BACKEND_ORIGIN || process.env.BACKEND_ORIGIN || 'http://localhost:8000';
 
 // Ensure the apiUrl starts with http:// or https:// during compilation to pass Next.js validation
 const normalizedApiUrl = apiUrl.startsWith('http') ? apiUrl : `https://${apiUrl}`;
