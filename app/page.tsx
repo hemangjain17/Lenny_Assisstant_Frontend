@@ -7,7 +7,7 @@ import { ArtifactViewer } from "@/components/artifacts/ArtifactViewer";
 import { Message, Artifact, Session } from "@/lib/types";
 import { fetchSessions, createSession, fetchSessionMessages } from "@/lib/api";
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+const API_BASE = process.env.NEXT_PUBLIC_API_URL || process.env.BACKEND_ORIGIN || "http://localhost:8000";
 
 export default function Home() {
   const [sessionId, setSessionId] = useState<string | null>(null);
