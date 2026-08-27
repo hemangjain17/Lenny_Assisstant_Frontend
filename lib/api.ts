@@ -1,6 +1,6 @@
 import { Message, Session } from "./types";
 
-const API_BASE = process.env.NEXT_PUBLIC_API_URL || process.env.BACKEND_ORIGIN || "http://localhost:8000";
+const API_BASE = process.env.BACKEND_ORIGIN || "http://localhost:8000";
 
 export async function fetchSessions(): Promise<Session[]> {
   try {
