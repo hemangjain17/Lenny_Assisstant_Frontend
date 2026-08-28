@@ -17,6 +17,7 @@ const MODEL_OPTIONS = [
   { id: "gemini-3.5-flash", name: "Gemini 3.5 Flash", provider: "gemini" },
   { id: "gemini-3.1-flash-lite", name: "Gemini 3.1 Flash Lite", provider: "gemini" },
   { id: "gemini-3-flash-preview", name: "Gemini 3 Flash Preview", provider: "gemini" },
+  { id: "llama3.1-local", name: "Llama 3.1 (Local)", provider: "ollama" },
   { id: "gemma4:31b", name: "Gemma 4 (31B)", provider: "ollama" },
   { id: "minimax-m3:cloud", name: "Minimax M3 (Cloud)", provider: "ollama" },
 ];

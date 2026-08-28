@@ -6,6 +6,7 @@ const normalizedApiUrl = apiUrl.startsWith('http') ? apiUrl : `https://${apiUrl}
 
 const nextConfig = {
   reactStrictMode: true,
+  output: 'standalone', // Required for optimal Docker build size
   async rewrites() {
     return [
       {
